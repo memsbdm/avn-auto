@@ -1,0 +1,124 @@
+@import "../../styles.scss";
+
+section{
+  margin-top: 5rem;
+  .container{
+    margin: 0 auto;
+    display: flex;
+    .container__left{
+      width: 45%;
+      p{
+        font-size: 1.15rem;
+        margin-top: 1rem;
+        max-width: 95%;
+        margin-bottom: 3rem;
+      }
+      a{
+        background-color: $red;
+        padding: 1rem 2rem;
+        clip-path: $polygon;
+      }
+      .strong__points{
+        margin-top: 4rem;
+        display: flex;
+        gap: 50px;
+        p{
+          max-width: 150px;
+          position: relative;
+          &::before{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 70px;
+            background-color: $red;
+            top: -10px;
+            left: 0;
+          }
+        }
+      }
+    }
+    .container__right{
+      width: 55%;
+      background-image: url("../../assets/landing/12.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (max-width: 1380px){
+  .container__left{
+    width: 50% !important;
+    padding-left: 10px;
+    p{
+      max-width: 100%!important;
+    }
+  }
+  .container__right{
+    width: 50%!important;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  section{
+    .container{
+      flex-direction: column;
+      .container__left{
+        width: 100%!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        p{
+          max-width: unset !important;
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+        }
+        .strong__points p{
+          text-align: left;
+        }
+        a{
+          padding: 0.75rem 1.75rem;
+        }
+      }
+      .container__right{
+        width: 100% !important;
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  section{
+    margin-top: 3rem;
+  }
+  .container__left{
+    padding-left: 0px !important;
+  }
+  .container__right{
+    width: 50%!important;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .strong__points{
+    gap: 20px!important;
+    p{
+      font-size: 0.9rem!important;
+    }
+  }
+  .container__right{
+    height: 200px!important;
+  }
+}
+
+@media screen and (max-width: 352px){
+  .strong__points{
+    gap: 10px!important;
+    p{
+      font-size: 0.85rem!important;
+    }
+  }
+}
