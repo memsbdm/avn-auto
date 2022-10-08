@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+// General
+$width: 1360px;
+$polygon: polygon(15% 0%, 100% 0, 100% 75%, 85% 100%, 0 100%, 0 25%);
+
+// Font family
+$ff-title: 'Chakra Petch', sans-serif;
+$ff-text: 'Mulish', sans-serif;
+
+// Colors
+$black-dark: #121212;
+$black-light: #161616;
+$red: #D12727;
+$white: #EDEDED;
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background-color: $black-dark;
+  color: $white;
+  a, a:visited{
+    color: currentColor;
+  }
+}

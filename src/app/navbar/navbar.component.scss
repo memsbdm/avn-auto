@@ -1,0 +1,79 @@
+@import "../../styles.scss";
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: $width;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 10px;
+  background-color: $black-dark;
+  font-family: $ff-title;
+  font-weight: bold;
+  z-index: 99;
+
+  h2 span{
+    color: $red;
+  }
+
+  nav{
+    ul{
+      display: flex;
+      gap: 50px;
+      li:first-of-type a{
+        border-bottom: 2px solid $red;
+        color: $red;
+      }
+      li a{
+        padding-bottom: 5px;
+        font-size: 0.95rem;
+      }
+    }
+  }
+  &>a{
+    border: 2px solid $red;
+    padding: 0.5em 0.75em;
+    clip-path: $polygon;
+  }
+}
+
+@media screen and (max-width: 850px){
+  header{
+    justify-content: space-between;
+    height: 80px;
+    &>a{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 650px){
+  header{
+    justify-content: center;
+    h2{
+      display: none;
+    }
+    nav ul{
+      gap: 25px;
+      font-size: 0.95rem!important;
+    }
+  }
+}
+
+@media screen and (max-width: 430px){
+  header a{
+    gap: 15px;
+    font-size: 0.80rem!important;
+  }
+}
+
+@media screen and (max-width: 370px){
+  header a{
+    font-size: 0.70rem!important;
+  }
+}
