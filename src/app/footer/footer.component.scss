@@ -5,19 +5,12 @@ footer {
     margin: 0 auto;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    h2{
-      font-family: $ff-title;
-      span{
-        color: $red;
-      }
-    }
+
     p{
-      font-family: $ff-title!important;
-      span{
-        color: $red;
-      }
+      text-align: center;
+      font-family: $ff-text;
     }
   }
 }
@@ -30,8 +23,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px){
-  .container p{
-    max-width: 130px;
+@media screen and (max-width: 700px){
+  footer .container p{
+    font-size: 0.8rem;
   }
 }
