@@ -9,6 +9,9 @@ import { LandingComponent } from './landing/landing.component';
 import { HomeServicesComponent } from './home-services/home-services.component';
 import { LandingVideoComponent } from './landing-video/landing-video.component';
 import { FaqComponent } from './faq/faq.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FaqComponent } from './faq/faq.component';
     LandingComponent,
     HomeServicesComponent,
     LandingVideoComponent,
-    FaqComponent
+    FaqComponent,
+    FooterComponent,
+    ContactComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,37 @@
+@import "../../styles.scss";
+
+footer {
+  .container {
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+      font-family: $ff-title;
+      span{
+        color: $red;
+      }
+    }
+    p{
+      font-family: $ff-title!important;
+      span{
+        color: $red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1380px){
+  footer{
+    .container{
+      margin: 0 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .container p{
+    max-width: 130px;
+  }
+}
