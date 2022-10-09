@@ -12,6 +12,7 @@ import { FaqComponent } from './faq/faq.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormComponent } from './form/form.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,11 +25,12 @@ import { FormComponent } from './form/form.component';
     FaqComponent,
     FooterComponent,
     ContactComponent,
-    FormComponent
+    FormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
