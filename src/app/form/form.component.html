@@ -2,27 +2,27 @@
 <form>
   <div class="element">
     <label for="name">VOTRE NOM</label><br>
-    <input type="text" id="name" name="name" placeholder="Entrez vore nom" required>
+    <input type="text" id="name" name="name" placeholder="Entrez vore nom" required [(ngModel)]="name">
   </div>
   <div class="element">
     <label for="phone">VOTRE TÉLÉPHONE</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="Entrez votre téléphone"><br>
+    <input type="tel" id="phone" name="phone" [(ngModel)]="phone" placeholder="Entrez votre téléphone"><br>
   </div>
   <div class="element">
     <label for="email">VOTRE MAIL</label><br>
-    <input type="email" id="email" name="email" placeholder="Entrez vore mail">
+    <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="Entrez vore mail">
   </div>
   <div class="element">
     <label for="car">INFORMATIONS VÉHICULE</label><br>
-    <input type="text" id="car" name="car" placeholder="Ex: Audi A3, 2015...">
+    <input type="text" id="car" name="car" [(ngModel)]="car" placeholder="Ex: Audi A3, 2015...">
   </div>
   <div class="element">
     <label for="message">MESSAGE</label><br>
-    <input type="text" id="message" name="message" placeholder="Entrez votre message">
+    <input type="text" id="message" name="message" [(ngModel)]="message" placeholder="Entrez votre message">
   </div>
   <div class="element">
     <label for="file">FICHIERS</label><br>
     <input type="file" id="file" name="file" multiple>
   </div>
-  <button (click)="test()">SEND</button>
+  <button (click)="submitForm()">SEND</button>
 </form>
