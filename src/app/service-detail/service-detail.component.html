@@ -3,25 +3,20 @@
     <div class="back">
       <a routerLink="/">HOME<i class="fa-solid fa-chevron-right"></i></a>
       <a routerLink="/prestations">SERVICES<i class="fa-solid fa-chevron-right"></i></a>
-      <a>STATIC</a>
+      <a class="little__title"></a>
     </div>
-    <h2>SERVICE 1</h2>
+    <h2 class="big__title"></h2>
     <div class="article__and__aside">
       <article>
         <div class="article__img">
-          <img src="assets/big1.jpg" alt="">
+          <img src="" alt="" class="service__img">
         </div>
-        <p>Sed lectus vestibulum mattis ullamcorper. Ante in nibh mauris cursus. Ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Nulla posuere sollicitudin aliquam ultrices sagittis. Cursus risus at ultrices mi tempus imperdiet. Ultricies mi quis hendrerit dolor magna eget est lorem. Sodales ut etiam sit amet nisl purus in mollis. Ultrices neque ornare aenean euismod elementum nisi quis. Vel turpis nunc eget lorem dolor sed viverra. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Porttitor lacus luctus accumsan tortor posuere ac ut. Sed tempus urna et pharetra pharetra massa massa ultricies. </p>
-        <ul>
-          <li><i class="fa-solid fa-check"></i>KEYPOINT (MEDIUM)</li>
-          <li><i class="fa-solid fa-check"></i>KEYPOINT (MEDIUM)</li>
-          <li><i class="fa-solid fa-check"></i>KEYPOINT (MEDIUM)</li>
-          <li><i class="fa-solid fa-check"></i>KEYPOINT (MEDIUM)</li>
-          <li><i class="fa-solid fa-check"></i>KEYPOINT (MEDIUM)</li>
-          <li><i class="fa-solid fa-check"></i>KEYPOINT (MEDIUM)</li>
+        <p class="top__text"></p>
+        <ul class="keyList">
+          <li *ngFor="let key of keypoints"><i class="fa-solid fa-check"></i>{{ key }}</li>
         </ul>
         <app-table></app-table>
-        <p>Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Eget velit aliquet sagittis id consectetur purus ut. Rutrum quisque non tellus orci ac auctor augue. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Congue mauris rhoncus aenean vel elit scelerisque. Volutpat est velit egestas dui id ornare. Tellus mauris a diam maecenas sed enim ut. Egestas tellus rutrum tellus pellentesque eu. A pellentesque sit amet porttitor</p>
+        <p class="bot__text"></p>
       </article>
       <aside>
         <div>

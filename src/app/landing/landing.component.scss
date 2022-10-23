@@ -6,7 +6,7 @@ section{
     margin: 0 auto;
     display: flex;
     .container__left{
-      width: 45%;
+      width: 50%;
       p{
         font-size: 1.15rem;
         margin-top: 1rem;
@@ -38,7 +38,7 @@ section{
       }
     }
     .container__right{
-      width: 55%;
+      width: 50%;
       background-image: url("../../assets/landing/12.png");
       background-position: center;
       background-size: contain;

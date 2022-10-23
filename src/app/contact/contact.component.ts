@@ -10,6 +10,7 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.scrollTo(0, 0);
     const today = new Date().getDay();
     const firstDay = document.querySelector('.hours .left span:nth-of-type(1)') as HTMLElement;
     const secondDay = document.querySelector('.hours .left span:nth-of-type(2)') as HTMLElement;

@@ -33,14 +33,19 @@ section{
     }
     .img__right{
       flex-direction: row-reverse;
+      h2, p, a{
+        margin: 3rem 5rem 0 0rem!important;
+      }
     }
+
+
 
     .img__left:nth-child(1) .service__bg{
       background-image: url("../../assets/big1.jpg");
     }
 
     .img__right:nth-child(2) .service__bg{
-      background-image: url("../../assets/big2.jpg");
+      background-image: url("../../assets/ceramique.jpg");
     }
 
     .img__left:nth-child(3) .service__bg{

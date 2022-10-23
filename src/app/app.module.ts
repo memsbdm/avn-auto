@@ -21,6 +21,14 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { ServiceOneComponent } from './service-one/service-one.component';
 import { ServiceDetailComponent } from './service-detail/service-detail.component';
 import { TableComponent } from './table/table.component';
+import { ServiceTwoComponent } from './service-two/service-two.component';
+import { ServiceThreeComponent } from './service-three/service-three.component';
+import { ServiceFourComponent } from './service-four/service-four.component';
+import { ServiceFiveComponent } from './service-five/service-five.component';
+import { ServiceSixComponent } from './service-six/service-six.component';
+import { ServiceSevenComponent } from './service-seven/service-seven.component';
+import { ServiceEightComponent } from './service-eight/service-eight.component';
+import { ServiceNineComponent } from './service-nine/service-nine.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +49,14 @@ import { TableComponent } from './table/table.component';
     ServiceOneComponent,
     ServiceDetailComponent,
     TableComponent,
+    ServiceTwoComponent,
+    ServiceThreeComponent,
+    ServiceFourComponent,
+    ServiceFiveComponent,
+    ServiceSixComponent,
+    ServiceSevenComponent,
+    ServiceEightComponent,
+    ServiceNineComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,4 +67,6 @@ import { TableComponent } from './table/table.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }

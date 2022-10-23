@@ -79,3 +79,32 @@ section{
     }
   }
 }
+
+
+@media screen and (max-width: 1380px){
+  section{
+    .container{
+      margin: 0 10px;
+      .article__and__aside{
+        article{
+          width: 100%;
+          .article__img{
+            display: flex;
+            justify-content: center;
+            img{
+              width: 50%;
+            }
+          }
+        }
+        aside{
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 850px){
+  img{
+    width: 100% !important;
+  }
+}
