@@ -1,0 +1,81 @@
+@import "../../styles.scss";
+
+section{
+  .container{
+    margin: 0 auto;
+    .back{
+      margin-bottom: 2rem;
+      a{
+        cursor: pointer;
+        &:last-of-type{
+          color: $red;
+        }
+        i{
+          margin: 0 0.7rem;
+          color: $red;
+        }
+      }
+    }
+    h2{
+      padding-bottom: 3rem;
+    }
+
+    .article__and__aside{
+      display: flex;
+      justify-content: space-between;
+      article{
+        width: 60%;
+        .article__img{
+          width: 100%;
+          height: 300px;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        p{
+          margin: 1.5rem 0;
+          text-align: justify;
+        }
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2rem 5rem;
+          li{
+            font-family: $ff-title;
+            i{
+              margin-right: 0.5rem;
+              color: $red;
+            }
+          }
+        }
+      }
+
+      aside{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem 0;
+        &>div{
+          padding: 1.5rem;
+          border: 1px solid $gray;
+          min-height: 130px;
+          h3{
+            margin-bottom: 1.5rem;
+          }
+          a{
+            transition: all 300ms;
+            &:hover{
+              color: $red;
+            }
+          }
+        }
+        .hours{
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}

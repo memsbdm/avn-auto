@@ -1,0 +1,36 @@
+@import "../../styles.scss";
+@import "../service-detail/service-detail.component.scss";
+
+table {
+  border: 1px solid $gray;
+  border-collapse: collapse;
+}
+table{
+  margin-top: 2rem;
+  width: 100%;
+  text-align: left;
+  caption{
+    font-family: $ff-title;
+    font-size: 1.75rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  thead{
+    font-family: $ff-title;
+    th{
+      padding: 1rem;
+      border: 1px solid $gray;
+      border-collapse: collapse;
+    }
+  }
+  tbody{
+    font-family: $ff-text;
+    tr{
+      th, td{
+        padding: 0.5rem 1rem;
+        border-right: 1px solid $gray;
+        border-collapse: collapse;
+      }
+    }
+  }
+}

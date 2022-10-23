@@ -12,8 +12,15 @@ import { FaqComponent } from './faq/faq.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormComponent } from './form/form.component';
-import {HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+import { PrestationsComponent } from './prestations/prestations.component';
+import { PrestationsServicesComponent } from './prestations-services/prestations-services.component';
+import { BigServicesComponent } from './big-services/big-services.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { ServiceOneComponent } from './service-one/service-one.component';
+import { ServiceDetailComponent } from './service-detail/service-detail.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +34,13 @@ import {FormsModule} from "@angular/forms";
     FooterComponent,
     ContactComponent,
     FormComponent,
+    PrestationsComponent,
+    PrestationsServicesComponent,
+    BigServicesComponent,
+    AchievementsComponent,
+    ServiceOneComponent,
+    ServiceDetailComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

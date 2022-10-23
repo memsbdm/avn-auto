@@ -1,0 +1,84 @@
+@import "../../styles.scss";
+
+section{
+  padding-top: 0!important;
+  .container{
+    margin: 0 auto;
+    .img__left, .img__right{
+      display: flex;
+      .service__bg{
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .service__txt{
+        padding-bottom: 4rem;
+        width: 50%;
+        h2, p, a{
+          margin: 3rem 0 0 5rem;
+        }
+        h2{
+          padding-bottom: 2rem;
+        }
+        p{
+          padding-bottom: 3rem;
+        }
+        a{
+          font-size: 1.15rem;
+          background-color: $red;
+          padding: 1rem 2rem;
+          clip-path: $polygon;
+        }
+      }
+    }
+    .img__right{
+      flex-direction: row-reverse;
+    }
+
+    .img__left:nth-child(1) .service__bg{
+      background-image: url("../../assets/big1.jpg");
+    }
+
+    .img__right:nth-child(2) .service__bg{
+      background-image: url("../../assets/big2.jpg");
+    }
+
+    .img__left:nth-child(3) .service__bg{
+      background-image: url("../../assets/big3.jpeg");
+    }
+
+  }
+}
+
+
+
+@media screen and (max-width: 1380px){
+  .img__left{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    .service__bg{
+      width: 100% !important;
+      height: 400px;
+      }
+    .service__txt{
+      width: 100% !important;
+    }
+  }
+  .img__right{
+    flex-wrap: wrap;
+    flex-direction: column-reverse!important;
+    .service__bg{
+      width: 100% !important;
+      height: 400px;
+    }
+    .service__txt{
+      width: 100% !important;
+    }
+  }
+  h2, p, a{
+    margin: 3rem 1rem 0 1rem!important;
+    text-align: justify;
+  }
+
+
+}

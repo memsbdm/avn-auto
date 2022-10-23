@@ -13,6 +13,7 @@ export class FormComponent implements OnInit {
   message:any
   name:any
   url = "https://avn-auto-email.azurewebsites.net/api/Test/SendEmail";
+  // url = "https://localhost:44339/api/Test/SendEmail";
   constructor(private client:HttpClient){}
 
     submitForm(){
