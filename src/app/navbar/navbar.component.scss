@@ -1,5 +1,14 @@
 @import "../../styles.scss";
 
+.bg{
+  position: fixed;
+  height: 140px;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  background-color: $black-dark;
+}
+
 header{
   position: fixed;
   top: 0;
@@ -43,6 +52,9 @@ header{
 }
 
 @media screen and (max-width: 850px){
+  .bg{
+    height: 80px;
+  }
   header{
     justify-content: space-between;
     height: 80px;
